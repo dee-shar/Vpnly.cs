@@ -1,8 +1,21 @@
-# vpnly.sh
+# Vpnly.cs
 Web-API for [vpnly.net](https://vpnly.net) an free VPN extension that provides unlimited access without any restrictions
 
 ## Example
-```bash
-source ./vpnly.sh
-get_servers
+```cs
+using System;
+using VpnlyApi;
+
+namespace Application
+{
+    internal class Program
+    {
+        static async Task Main()
+        {
+            var api = new Vpnly();
+            string servers = await api.GetServers();
+            Console.WriteLine(servers);
+        }
+    }
+}
 ```
