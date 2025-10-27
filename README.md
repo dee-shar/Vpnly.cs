@@ -3,7 +3,6 @@ Web-API for [vpnly.net](https://vpnly.net) an free VPN extension that provides u
 
 ## Example
 ```cs
-using System;
 using VpnlyApi;
 
 namespace Application
